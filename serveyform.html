@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Survey Form</h2>
+
+    <form action="#" method="post">  <!-- action needs URL-->
+        <fieldset>
+            <legend>Survey From</legend>
+            <label for="Name">Enter full Name:</label>
+            <input type="name" placeholder="Enter full Name" name="name" required/><br><br>
+            
+            <label for="Age">your Age:</label>
+            <input type="number" name="age" id="age" placeholder="Enter your Age" required><br><br>
+
+            <label for="Color">Favorite Color</label>  <!-- select needs option, select is also a input field-->
+            <select id="color" name="color">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select><br><br>
+
+            <label for="feedback">Your feedback</label>
+            <textarea name="feedback" id="feedback" required></textarea><br><br>  <!-- input type textarea-->
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <h3>Instructions</h3>
+    <ul>
+        <li>Fill your name and Age</li>
+        <li>select your favorite color</li>
+        <li>Please provide Feedback</li>
+        <li>Dont Forgot to click sibmit button</li>
+    </ul>
+
+
+    <h2>Survey Responses</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Color</th>
+            <th>Feedback</th>
+        </tr>
+        <tr>
+            <th>Murali</th>
+            <th>22</th>
+            <th>red</th>
+            <th>Good, Best</th>
+        </tr>
+        <tr>
+            <th>Murari</th>
+            <th>22</th>
+            <th>yellow</th>
+            <th>Best, good</th>
+        </tr>
+    </table>
+</body>
+</html>
